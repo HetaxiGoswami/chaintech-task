@@ -1,7 +1,5 @@
-<!-- src/app/item-list/item-list.component.html -->
 <div class="container mt-4">
     <div class="d-flex mb-3 gap-3">
-      <!-- Search Filter Field -->
       <mat-form-field appearance="outline" class="filter-field flex-grow-1">
         <mat-label>Search</mat-label>
         <input
@@ -12,7 +10,6 @@
         />
       </mat-form-field>
   
-      <!-- Sort By Field -->
       <mat-form-field appearance="outline" class="sort-field">
         <mat-label>Sort By</mat-label>
         <mat-select [(ngModel)]="sortKey" (selectionChange)="onSortChange()">
@@ -22,7 +19,6 @@
       </mat-form-field>
     </div>
   
-    <!-- Card Display -->
     <div class="row">
       <div class="col-md-4 mb-4" *ngFor="let item of filteredItems">
         <div class="card h-100">
